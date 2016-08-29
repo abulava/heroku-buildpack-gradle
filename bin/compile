@@ -60,7 +60,7 @@ if [ ! -f $BUILD_DIR/gradlew ] ; then
   echo "       in the future may not be supported."
   cp -rn ${OPT_DIR}/wrapper/* ${BUILD_DIR}
 fi
-BUILDCMD="./gradlew"
+BUILDCMD="./gradlew --stacktrace --info"
 chmod +x ${BUILD_DIR}/gradlew
 
 BUILDCMD="$BUILDCMD $GRADLE_TASK"
